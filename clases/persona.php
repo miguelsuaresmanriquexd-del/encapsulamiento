@@ -15,24 +15,29 @@ class persona {
     public function setName($nombre) {
         $this->nombre = $nombre;
     }
+    public function getName() {
+        return $this->nombre;
+    }
 
     public function setApellido($apellido) {
         $this->apellido = $apellido;
+    }
+    public function getApellido() {
+        return $this->apellido;
     }
 
     public function setEdad($edad) {
         $this->edad = $edad;
     }
+    public function getEdad() {
+        return $this->edad;
+    }
 
     public function setCorreo($correo) {
         $this->correo = $correo;
     }
-
-    public function saludar() {
-        return "hola: " . $this->nombre . "<br>" .
-               "tu apellido es: " . $this->apellido . "<br>" .
-               "tu edad es: " . $this->edad . "<br>" .
-               "tu correo es: " . $this->correo;
+    public function getCorreo() {
+        return $this->correo;
     }
 }
 ?>
