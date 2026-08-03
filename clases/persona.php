@@ -15,6 +15,8 @@ class persona {
     public function setName($nombre) {
         if (is_string($nombre)&& trim($nombre) !== ""){
             $this->nombre = $nombre;
+        }else{
+            echo "nombre invalido crack";
         }
     }
     public function getName() {
@@ -43,7 +45,7 @@ class persona {
     }
 
     public function setCorreo($correo) {
-        if (is_string($correo)&& trim($correo) !== ""){
+        if (is_string($correo) && trim($correo) !== "" ){
             $this->correo = $correo;
         }
     }

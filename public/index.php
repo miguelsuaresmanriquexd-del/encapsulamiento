@@ -47,4 +47,7 @@ echo "hola: " . $persona3->getName() . "<br>" .
      "tu apellido es: " . $persona3->getApellido() . "<br>" .
      "tu edad es: " . $persona3->getEdad() . "<br>" .
      "tu correo es: " . $persona3->getCorreo() . "<br>";
+     
+     echo $persona1->setName(" ") . "</br>" ;
+     echo $persona1->setEdad(1);
 ?>
