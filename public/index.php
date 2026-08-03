@@ -27,7 +27,7 @@ echo "Cambios válidos persona 1:<br>" .
      "tu edad es: " . $persona1->getEdad() . "<br>" .
      "tu correo es: " . $persona1->getCorreo() . "<br><br>";
 
-$persona1->setEdad(-5);
+$persona1->setEdad(15);
 $persona2->setName("");
 $persona3->setCorreo("correoInvalido");
 $persona2->setApellido("María123");

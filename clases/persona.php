@@ -13,28 +13,39 @@ class persona {
     }
 
     public function setName($nombre) {
-        $this->nombre = $nombre;
+        if (is_string($nombre)&& trim($nombre) !== ""){
+            $this->nombre = $nombre;
+        }
     }
     public function getName() {
         return $this->nombre;
     }
 
     public function setApellido($apellido) {
-        $this->apellido = $apellido;
+        if (is_string($apellido)&& trim($apellido) !== ""){
+            $this->apellido = $apellido;
+        }
     }
     public function getApellido() {
         return $this->apellido;
     }
 
     public function setEdad($edad) {
+    if (is_numeric($edad) && $edad >= 10 && $edad <= 120  && trim($edad) !== "") {
         $this->edad = $edad;
+        }else{
+            echo "Edad no permitida crack";
+        }
     }
+
     public function getEdad() {
         return $this->edad;
     }
 
     public function setCorreo($correo) {
-        $this->correo = $correo;
+        if (is_string($correo)&& trim($correo) !== ""){
+            $this->correo = $correo;
+        }
     }
     public function getCorreo() {
         return $this->correo;
